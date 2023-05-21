@@ -1,0 +1,258 @@
+@mixin media(screen)
+
+    
+    
+body
+    margin: 0
+*
+    font-family: sans-serif
+.header
+    header
+        display: flex
+        flex-direction: row
+        justify-content: space-evenly
+    &__block_1
+        width: 40%
+        border: 1px solid black
+        height: max-content
+        padding: 1rem
+        & p
+            font-weight: 700
+        & >*:not(:first-child)
+            margin-left: 1.25rem
+    &__block_2
+        img
+            width: 50%
+    &__body
+        p
+            color: red
+            font-size: 2rem
+        &_cont
+            border: 1px solid black
+            height: 10rem
+            width: 50%
+            padding: 1rem
+            font-size: 1.5rem
+.block
+    padding: 5rem 0
+    border-top: 5px dashed #a19fa02f
+    border-bottom: 5px dashed #a19fa02f
+    margin: 5rem 0
+    display: flex
+    &__mean
+        display: flex
+        flex-direction: row
+        justify-content: space-evenly
+        margin-top: 2rem
+        &_1
+            display: flex
+            flex-direction: column
+            width: 6.25rem
+            align-items: center
+            .we
+                width: 4.375rem
+                display: flex
+                justify-content: center
+                height: 4rem
+                border-radius: 100%
+                svg
+                    width: 50%
+                    color: white
+            .white
+                background: #9e5eda
+            .yellow
+                background: #dace5e
+            .green
+                background: #30c93d
+            p
+                text-align: center
+                color: #888888
+    &_1
+        width: 50%
+        img
+            width: 100%
+.tours
+    height: 100%
+    display: flex
+    margin-left: 2rem
+    .tour
+        height: 30rem
+        width: 15rem
+        cursor: pointer
+        &__img 
+            border-radius:  20px 20px 0  0
+            display: flex
+            justify-content: center
+            background: #bdcbeb
+            padding: 1rem
+            img
+                border-radius:  20px 20px 0  0
+                object-fit: fill
+                width: 90%
+
+        &__text
+            padding: 2rem  1rem
+            background: #d6d9e0
+            height: 25%
+            border-radius: 0 0 20px 20px
+            p
+                margin: 0
+                color: #535353
+        &:hover
+            transform: rotateZ(2deg)
+            transition-duration: .2s
+    &>*:not(:first-child)
+        margin-left: 1rem
+
+
+.form
+    display: flex
+    width: 90%
+    margin: auto
+    padding-top: 5rem
+    border-top: 5px dashed #a19fa02f
+    margin-top: 5rem
+    &__inputs
+        display: flex
+        flex-direction: column
+        width: 50%
+        &>*
+            padding: 1rem
+            margin-bottom: 2rem
+            border: 1px solid #a19fa0
+            border-radius: 5px
+            width: 70%
+        textarea
+            width: 90%
+        .submit
+            background: #df8116
+            font-size: 1.2rem
+            color: white
+            text-transform: uppercase
+            &:hover
+                font-size: 1.4rem
+                transition-duration: .2s
+            &:active
+                background: #c7700d
+                transition-duration: .2s
+    &_img
+        margin-left: auto
+        width: 50%
+        display: flex
+        height: 100%
+        img
+            margin-left: auto
+            width: 80%
+            border-radius: 10px
+.order
+    display: flex
+    margin: auto
+    background-image: url("../imgs/bg2_7.jpg")
+    justify-content: center
+    &>*  
+        text-align: center
+        color: white
+        margin: auto
+    p
+        font-size: 1.5rem
+        margin-bottom: 2rem
+    &__block_1,
+    &__block_2
+        display: flex
+        align-items: center
+        background: #0000003b
+        padding: 3rem 1rem 
+        height: 25rem
+        margin: 2rem 
+        width: 40%
+        justify-content: center
+        border-radius: 20px
+        a
+            color: white
+            text-decoration: none
+            background: #c7700d
+            border-radius: 1.25rem
+            padding: 1rem
+            font-size: 2rem
+            width: max-content
+            
+            &:hover
+                font-size: 2.2rem
+                transition-duration: .2s
+            &:active
+                background: #99570b
+                transition-duration: .2s
+    &__block_1
+        flex-direction: column
+.reviews
+    padding-top: 5rem
+    border-top: 5px dashed #a19fa02f
+    margin-top: 5rem
+    &_body
+        display: flex
+        width: 90%
+        margin: auto
+        flex-wrap: wrap
+        justify-content: space-evenly
+        &>*
+            width: 33%
+            display: flex
+            padding: 2rem 4rem
+            border-radius: 25px
+            box-shadow: 1px 5px 10px 2px #0000000e 
+            margin-top: 2rem
+            div
+                margin-left: 1.25rem
+            img
+                width: 50%
+                border-radius: 25px
+            p
+                margin: auto
+                line-height: 1.2rem
+    .pluses
+        display: flex
+        width: 30%
+        margin: auto
+        margin-top: 5rem
+        .plus
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            padding: 2rem 1rem
+            background: #0000000c
+            cursor: pointer
+            border
+            div
+                background: #0000002d
+                height: 4rem
+                display: flex
+                align-items: center
+                justify-content: center
+                align-items: center
+                width: 5rem
+                padding: 2rem
+                p
+                    text-align: center
+                    word-break:  break-all
+            p
+                text-align: center
+            &:hover
+                transform: scale(1.2, 1.2)
+                transition-duration: .2s
+        &>*:not(:first-child)
+            margin-left: 2rem
+            
+
+                
+        
+
+
+    
+
+            
+
+                
+        
+
+            
